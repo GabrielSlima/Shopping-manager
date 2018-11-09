@@ -16,7 +16,7 @@ First thing first, you'll need to have:
 > You need to execute a query telling a new user
 
 ## INSTALL
-## ON WINDOWS
+### ON WINDOWS
 
 1. Open Sistema>Codigo>bin>Debug and execute the file Tcc.exe
 1. Type the user and password that you created before
