@@ -13,7 +13,7 @@ First thing first, you'll need to have:
 *   Visual Studio installed
 *   SQL Server installed
 *   Windows as Operational System
-> You need to execute a query telling a new user
+> You need to execute a SQL's query telling a new user to the System
 
 ## INSTALL
 ### ON WINDOWS
