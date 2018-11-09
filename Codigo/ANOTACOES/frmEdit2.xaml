@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Class="Tcc.frmAddAnot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="frmAddAnot" Height="795.523" Width="552.239" Background="#FF191919">
+    <Grid Margin="0,0,0,6" HorizontalAlignment="Left" Width="542" Background="#FF191919">
+        <TextBlock Foreground="White" HorizontalAlignment="Left" Margin="10,289,0,0" TextWrapping="Wrap" Text="Anotações" VerticalAlignment="Top" Height="361" Width="522"/>
+        <Image HorizontalAlignment="Left" Height="127" Margin="187,10,0,0" VerticalAlignment="Top" Width="167" Source="/Tcc;component/Imagens/notepad.png"/>
+        <Canvas HorizontalAlignment="Left" Height="109" Margin="10,650,0,0" VerticalAlignment="Top" Width="522">
+            <Controls:Tile Canvas.Left="106" Margin="0" Canvas.Top="10" Height="73" Width="295" Background="#FF191919">
+                <Image Source="Imagens/save.png"/>
+            </Controls:Tile>
+        </Canvas>
+        <TextBox Foreground="White" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Data:" HorizontalAlignment="Left" Height="23" Margin="85,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="375" Background="#FF191919"/>
+        <TextBox Foreground="White" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Hora:"  HorizontalAlignment="Left" Height="23" Margin="85,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Background="#FF191919"/>
+
+    </Grid>
+</Controls:MetroWindow>

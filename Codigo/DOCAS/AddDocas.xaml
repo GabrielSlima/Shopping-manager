@@ -1,0 +1,19 @@
+﻿<Controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Tcc.DOCAS.AddDocas"
+        Title="Incluir docas" Height="679.075" Width="524" Background="White" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <TextBox Foreground="White" x:Name="txtNomeLoja"  Margin="87,67,91,545" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Nome da loja:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtHora" Margin="87,113,91,499" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Hora da entrega:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtData" Margin="87,160,91,452" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Data da entrega:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtCodigoDoFunc" Margin="87,314,91,298" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Seu codigo:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtDescricao" Margin="87,372,91,127"  Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Clique para adicionar uma descrição:" Background="DeepSkyBlue"/>
+        <Controls:Tile Name="tlSalvar" Margin="87,541,91,34" Content="Salvar" Height="Auto" Width="Auto" Background="DeepSkyBlue" Click="tlSalvar_Click">
+        </Controls:Tile>
+        <TextBox Foreground="White" x:Name="txtAltura" Margin="87,262,91,350" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Altura:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtPeso" Margin="87,211,91,401" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Peso:" Background="DeepSkyBlue"/>
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Class="Tcc.DOCAS.frmAddDocas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                           xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      WindowStyle="SingleBorderWindow"
+        Title="frmAddDocas" Height="570" Width="494" Background="#FF191919">
+    
+    <Grid>
+        <TextBox Foreground="White" Name="txtNomeLoja"  Margin="74,80,74,423" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Nome da loja:" Background="#FF191919"/>
+        <TextBox Foreground="White" Name="txtHora" Margin="74,126,74,377" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Hora da entrega:" Background="#FF191919"/>
+        <TextBox Foreground="White" Name="txtData" Margin="74,173,74,330" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Data da entrega:" Background="#FF191919"/>
+        <TextBox Foreground="White" Name="txtCodigoDoFunc" Margin="74,220,74,283" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Seu codigo:" Background="#FF191919"/>
+        <TextBox Foreground="White" Name="txtDescricao" Margin="74,267,74,123" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Clique para adicionar uma descrição:" Background="#FF191919"/>
+        <Controls:Tile Margin="168,425,178,10" Height="Auto" Background="#CC090913">
+            <Image Source="image/save.png" Height="83"/>
+        </Controls:Tile>
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8474CC1A-156A-4E07-9B6F-E1CA2D02C8CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tcc</RootNamespace>
+    <AssemblyName>Tcc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Controls.2.2.5\lib\AForge.Controls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Imaging.2.2.5\lib\AForge.Imaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Vision, Version=2.2.5.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Vision.2.2.5\lib\AForge.Vision.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.3.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\Todas as pastas\Metro\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\Todas as pastas\Metro\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\Todas as pastas\Metro\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAppBar">
+      <HintPath>..\packages\WpfAppBar.1.6.0\lib\net40\WpfAppBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ANOTACOES\frmAdcAnot.xaml.cs">
+      <DependentUpon>frmAdcAnot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ANOTACOES\frmAlterarAnot.xaml.cs">
+      <DependentUpon>frmAlterarAnot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ANOTACOES\frmConfigurarAnot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANOTACOES\frmConfigurarAnot.Designer.cs">
+      <DependentUpon>frmConfigurarAnot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANOTACOES\frmVerAnot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANOTACOES\frmVerAnot.Designer.cs">
+      <DependentUpon>frmVerAnot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\BLL\AnotacaoBLL.cs" />
+    <Compile Include="Code\BLL\DocasBLL.cs" />
+    <Compile Include="Code\BLL\FuncionarioBLL.cs" />
+    <Compile Include="Code\BLL\LojasBLL.cs" />
+    <Compile Include="Code\BLL\SetorBLL.cs" />
+    <Compile Include="Code\BLL\UsuarioBLL.cs" />
+    <Compile Include="Code\DAL\AnotacaoDAL.cs" />
+    <Compile Include="Code\DAL\DocaDAL.cs" />
+    <Compile Include="Code\DAL\FuncionarioDAL.cs" />
+    <Compile Include="Code\DAL\LojaDAL.cs" />
+    <Compile Include="Code\DAL\SetorDAL.cs" />
+    <Compile Include="Code\DAL\UsuarioDAL.cs" />
+    <Compile Include="Code\DAL\VeiculosDAL.cs" />
+    <Compile Include="Code\DTO\AnotacaoDTO.cs" />
+    <Compile Include="Code\DTO\FuncionarioDTO.cs" />
+    <Compile Include="Code\DTO\LojasDTO.cs" />
+    <Compile Include="Code\DTO\SetorDTO.cs" />
+    <Compile Include="Code\DTO\VeiculosDTO.cs" />
+    <Compile Include="Code\DTO\DocasDTO.cs" />
+    <Compile Include="Code\DTO\UsuarioDTO.cs" />
+    <Compile Include="Code\BLL\VeiculoBLL.cs" />
+    <Compile Include="DOCAS\AddDocas.xaml.cs">
+      <DependentUpon>AddDocas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DOCAS\frmAlterarDoca.xaml.cs">
+      <DependentUpon>frmAlterarDoca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DOCAS\frmConfigurarDoca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCAS\frmConfigurarDoca.Designer.cs">
+      <DependentUpon>frmConfigurarDoca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOCAS\frmVerDocas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCAS\frmVerDocas.Designer.cs">
+      <DependentUpon>frmVerDocas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUser.xaml.cs">
+      <DependentUpon>frmAddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\frmAdcFunc.xaml.cs">
+      <DependentUpon>frmAdcFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\frmAlterarFunc.xaml.cs">
+      <DependentUpon>frmAlterarFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\frmConfigurarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios\frmConfigurarFuncionario.Designer.cs">
+      <DependentUpon>frmConfigurarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\frmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios\frmFuncionarios.Designer.cs">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hora.cs" />
+    <Compile Include="LOJAS\frmAddLoja.xaml.cs">
+      <DependentUpon>frmAddLoja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOJAS\frmAlterarLoja.xaml.cs">
+      <DependentUpon>frmAlterarLoja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOJAS\frmConfigurarLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOJAS\frmConfigurarLoja.Designer.cs">
+      <DependentUpon>frmConfigurarLoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOJAS\frmVerLojas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOJAS\frmVerLojas.Designer.cs">
+      <DependentUpon>frmVerLojas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SEGURANCA\Cameras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEGURANCA\Cameras.Designer.cs">
+      <DependentUpon>Cameras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETORES\frmAddSetor.xaml.cs">
+      <DependentUpon>frmAddSetor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SETORES\frmAlterar1.xaml.cs">
+      <DependentUpon>frmAlterar1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SETORES\frmConfigurarSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETORES\frmConfigurarSetor.Designer.cs">
+      <DependentUpon>frmConfigurarSetor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETORES\frmVerSetores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETORES\frmVerSetores.Designer.cs">
+      <DependentUpon>frmVerSetores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs" />
+    <Compile Include="VEICULOS\frmAlterarVeiculos.xaml.cs">
+      <DependentUpon>frmAlterarVeiculos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VEICULOS\frmConfigurarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VEICULOS\frmConfigurarVeiculo.Designer.cs">
+      <DependentUpon>frmConfigurarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VEICULOS\frmVerVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VEICULOS\frmVerVeiculos.Designer.cs">
+      <DependentUpon>frmVerVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VEICULOS\frmAddVeiculo.xaml.cs">
+      <DependentUpon>frmAddVeiculo.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ANOTACOES\frmAdcAnot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ANOTACOES\frmAlterarAnot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DOCAS\AddDocas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DOCAS\frmAlterarDoca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmAddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Funcionarios\frmAdcFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Funcionarios\frmAlterarFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LOJAS\frmAddLoja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LOJAS\frmAlterarLoja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="SETORES\frmAddSetor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SETORES\frmAlterar1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VEICULOS\frmAddVeiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VEICULOS\frmAlterarVeiculos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="ANOTACOES\frmConfigurarAnot.resx">
+      <DependentUpon>frmConfigurarAnot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANOTACOES\frmVerAnot.resx">
+      <DependentUpon>frmVerAnot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCAS\frmConfigurarDoca.resx">
+      <DependentUpon>frmConfigurarDoca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOCAS\frmVerDocas.resx">
+      <DependentUpon>frmVerDocas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios\frmConfigurarFuncionario.resx">
+      <DependentUpon>frmConfigurarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios\frmFuncionarios.resx">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOJAS\frmConfigurarLoja.resx">
+      <DependentUpon>frmConfigurarLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOJAS\frmVerLojas.resx">
+      <DependentUpon>frmVerLojas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SEGURANCA\Cameras.resx">
+      <DependentUpon>Cameras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETORES\frmConfigurarSetor.resx">
+      <DependentUpon>frmConfigurarSetor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETORES\frmVerSetores.resx">
+      <DependentUpon>frmVerSetores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VEICULOS\frmConfigurarVeiculo.resx">
+      <DependentUpon>frmConfigurarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VEICULOS\frmVerVeiculos.resx">
+      <DependentUpon>frmVerVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Add.png" />
+    <Resource Include="image\addloja.png" />
+    <Resource Include="image\addnotepad.png" />
+    <Resource Include="image\adduser.png" />
+    <Resource Include="image\deletaruser.png" />
+    <Resource Include="image\file.png" />
+    <Resource Include="image\settings.png" />
+    <Resource Include="image\truck.png" />
+    <Resource Include="image\user.png" />
+    <Resource Include="image\volante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\binary-code-1.png" />
+    <Resource Include="image\binary-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\caminhaosinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\usuariobranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\carrinhosinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\notepad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\umvolanteai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\umiconeai.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Favicon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\java.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

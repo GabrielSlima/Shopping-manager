@@ -1,0 +1,15 @@
+﻿<Controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      WindowStyle="SingleBorderWindow"
+     xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Tcc.ANOTACOES.frmAdcAnot"
+        Title="Incluir anotação" Height="660.5" Width="567" Background="White" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="txtData" Foreground="White" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Data:" HorizontalAlignment="Left" Height="28" Margin="85,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="375" Background="DeepSkyBlue"/>
+        <TextBox x:Name="txtHora" Foreground="White" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Hora:"  HorizontalAlignment="Left" Height="28" Margin="85,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Background="DeepSkyBlue"/>
+        <TextBox x:Name="txtAnot" Foreground="White" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="Clique para adicionar uma anotação." HorizontalAlignment="Left" Height="374" Margin="10,161,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="539" Background="DeepSkyBlue"/>
+        <Custom:Tile x:Name="tlAdd" Content="Salvar" Margin="211,550,208,6" Height="Auto" Click="tlAdd_Click" FontSize="18" Background="DeepSkyBlue"/>
+        <TextBox x:Name="txtCode" Foreground="White" Custom:TextBoxHelper.ClearTextButton="True" Custom:TextBoxHelper.Watermark="ID:"  HorizontalAlignment="Left" Height="28" Margin="85,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Background="DeepSkyBlue"/>
+    </Grid>
+</Controls:MetroWindow>

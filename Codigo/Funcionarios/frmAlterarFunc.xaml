@@ -1,0 +1,36 @@
+﻿<Controls:MetroWindow x:Class="Tcc.Funcionarios.frmAlterarFunc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Alterar" Height="570.439" Width="568.62" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,5">
+        <TextBox Foreground="White" x:Name="txtNomeAddUser" Controls:TextBoxHelper.Watermark="Nome:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,86,35,418" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtRG" Controls:TextBoxHelper.Watermark="RG:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,181,287,327" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtCidade" Controls:TextBoxHelper.Watermark="Cidade:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,223,287,285" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtEndereco" Controls:TextBoxHelper.Watermark="Endereço:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,310,35,194" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtEmail" Controls:TextBoxHelper.Watermark="Email:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,264,35,240" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtComplemento" Controls:TextBoxHelper.Watermark="Complemento:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,352,35,152" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtTelefone" Controls:TextBoxHelper.Watermark="Telefone:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,394,345,110" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtCelular" Controls:TextBoxHelper.Watermark="Celular:" Controls:TextBoxHelper.ClearTextButton="True" Margin="339,394,35,110" Background="DeepSkyBlue" RenderTransformOrigin="0.848,0"/>
+        <TextBox  Foreground="White" x:Name="txtCPF" Controls:TextBoxHelper.Watermark="CPF:" Controls:TextBoxHelper.ClearTextButton="True" Margin="38,139,287,369" Background="DeepSkyBlue"/>
+        <Controls:Tile x:Name="tlSalvar" Content="Salvar" Margin="203,445,222,10" Height="Auto" Width="Auto" Background="DeepSkyBlue" Click="tlSalvar_Click" FontSize="24" />
+        <TextBox Foreground="White" x:Name="txtID" Controls:TextBoxHelper.Watermark="ID:"  Margin="221,394,227,110" Background="DeepSkyBlue"/>
+        <ComboBox Foreground="White" x:Name="cboSexo"  Controls:TextBoxHelper.Watermark="Sexo" HorizontalAlignment="Left" Margin="288,140,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Masculino"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Feminino"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Outro..."/>
+        </ComboBox>
+        <ComboBox  Foreground="White" x:Name="cboCargo" Controls:TextBoxHelper.Watermark="Cargo" HorizontalAlignment="Left" Margin="288,182,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Presidente"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Diretor"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Administração"/>
+            <ComboBoxItem Foreground="White" Background="#ff191919" Content="Outro..."/>
+        </ComboBox>
+        <ComboBox  Foreground="White" x:Name="cboTurno" Controls:TextBoxHelper.Watermark="Turno" HorizontalAlignment="Left" Margin="288,223,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Manhã"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Tarde"/>
+            <ComboBoxItem Foreground="White" Background="#FF191919" Content="Noite"/>
+        </ComboBox>
+
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,12 @@
+﻿<Controls:MetroWindow x:Class="Tcc.SETORES.frmAlterar1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Alterar" Height="472.249" Width="348.954" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Foreground="White" x:Name="txtNomeSetor" Margin="38,0,32,323" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Nome do setor:" Background="DeepSkyBlue" Height="31" VerticalAlignment="Bottom"/>
+        <TextBox Foreground="White" x:Name="txtDescricao" Margin="38,142,32,148" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Clique para adicionar uma descrição do setor." Background="DeepSkyBlue" />
+        <Controls:Tile x:Name="tlSalvar" Margin="38,365,32,10" Height="Auto" Width="Auto" Content="Salvar" Background="DeepSkyBlue" Click="tlSalvar_Click"/>
+        <TextBox Foreground="White" x:Name="txtID" Margin="38,38,32,373" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="ID:" Background="DeepSkyBlue"/>
+    </Grid>
+</Controls:MetroWindow>

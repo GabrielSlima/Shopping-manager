@@ -1,0 +1,12 @@
+﻿<Controls:MetroWindow x:Class="Tcc.frmAddFunc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="frmAddFunc" Height="396.284" Width="700.337" Background="DarkSlateGray">
+    <Grid Margin="0,0,2,-2" Height="357" VerticalAlignment="Bottom">
+        <TextBox Margin="10,153,417,178" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Nome" Background="DarkSlateGray"/>
+        <TextBox Margin="10,195,417,136" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="CPF" Background="DarkSlateGray"/>
+        <Image Source="Imagens/manager.png" HorizontalAlignment="Left" Height="117" Margin="10,20,0,0" VerticalAlignment="Top" Width="119"/>
+
+    </Grid>
+</Controls:MetroWindow>

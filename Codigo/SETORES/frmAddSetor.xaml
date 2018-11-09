@@ -1,0 +1,11 @@
+﻿<Controls:MetroWindow x:Class="Tcc.SETORES.frmAddSetor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Incluir setor" Height="432.477" Width="344.359" Background="White" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
+        <TextBox Foreground="White" x:Name="txtNomeSetor" Margin="33,26,32,345" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Nome do setor:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtDescricao" Margin="33,80,32,170" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Clique para adicionar uma descrição do setor." Background="DeepSkyBlue" />
+        <Controls:Tile x:Name="tlSalvar" Margin="33,303,32,32" Height="Auto" Width="Auto" Content="Salvar" Background="DeepSkyBlue" Click="tlSalvar_Click"/>
+    </Grid>
+</Controls:MetroWindow>

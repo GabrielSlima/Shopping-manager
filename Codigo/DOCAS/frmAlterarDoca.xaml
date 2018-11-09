@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Class="Tcc.DOCAS.frmAlterarDoca"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="frmAlterarDoca" Height="717.991" Width="455.648" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Foreground="White" x:Name="txtNomeLoja"  Margin="56,114,54,537" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Nome da loja:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtHora" Margin="56,160,54,491" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Hora da entrega:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtData" Margin="56,207,54,444" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Data da entrega:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtCodigoDoFunc" Margin="56,361,54,290" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Seu codigo:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtDescricao" Margin="56,419,54,119"  Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Clique para adicionar uma descrição:" Background="DeepSkyBlue"/>
+        <Controls:Tile x:Name="tlSalvar" Margin="56,588,54,26" Content="Salvar" Height="Auto" Width="Auto" Background="DeepSkyBlue" Click="tlSalvar_Click"/>
+        <TextBox Foreground="White" x:Name="txtAltura" Margin="56,309,54,342" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Altura:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtPeso" Margin="56,258,54,393" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Peso:" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" x:Name="txtID"  Margin="56,66,298,585"  Controls:TextBoxHelper.Watermark="ID:" Background="DeepSkyBlue"/>
+
+    </Grid>
+</Controls:MetroWindow>

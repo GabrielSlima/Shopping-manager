@@ -1,0 +1,15 @@
+﻿<Controls:MetroWindow x:Class="Tcc.VEICULOS.frmAlterarVeiculos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Alterar" Height="578.661" Width="522.175" Loaded="MetroWindow_Loaded " WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Foreground="White" x:Name="txtPlaca" Margin="15,83,17,424" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Placa do carro:" FontSize="18"/>
+        <TextBox Foreground="White" x:Name="txtModelo" Margin="15,140,17,367" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Modelo do carro" FontSize="18"/>
+        <TextBox Foreground="White" x:Name="txtMarca" Margin="15,197,17,310" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Marca do carro:" FontSize="18" />
+        <TextBox Foreground="White" x:Name="txtCodFunc"  Margin="15,254,17,255" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Seu codigo:" FontSize="18" />
+        <Controls:Tile x:Name="tlSalvar" Margin="15,448,17,21" Content="Salvar" Width="Auto" FontSize="22" Click="tlSalvar_Click" Background="DeepSkyBlue" Height="Auto"/>
+        <TextBox Foreground="White" x:Name="txtID" Margin="15,25,365,482" Background="DeepSkyBlue" Controls:TextBoxHelper.Watermark="ID:" FontSize="18"/>
+
+    </Grid>
+</Controls:MetroWindow>

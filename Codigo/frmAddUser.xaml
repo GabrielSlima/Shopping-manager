@@ -1,0 +1,24 @@
+﻿<Controls:MetroWindow x:Class="Tcc.frmAddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Usuario" Height="421.757" Width="342.678" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Canvas Margin="52,9,52,247">
+            <Image Source="image/user.png" Canvas.Left="43" Canvas.Top="10" Height="116" Width="157"/>
+        </Canvas>
+        <Controls:Tile Margin="52,351,50,10" Height="Auto" Width="Auto" Content="Salvar" Background="#FF4EB020" Click="Tile_Click"/>
+        <TextBox  Foreground="White" x:Name="txtNome" Controls:TextBoxHelper.Watermark="Login:" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="True" Height="23" Margin="54,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Background="#FF4EB020"/>
+        <PasswordBox  Foreground="White" x:Name ="txtSenha" Controls:TextBoxHelper.Watermark="Senha:" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="True"  Margin="54,181,0,0" VerticalAlignment="Top" Background="#FF4EB020" Height="26" Width="231"/>
+        <ComboBox  Foreground="White" x:Name="cboCargo" Controls:TextBoxHelper.Watermark="Cargo" HorizontalAlignment="Left" Margin="52,243,0,0" VerticalAlignment="Top" Width="233" Background="#FF4EB020" Height="18">
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Presidente</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Diretor</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Gerente</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Recepção</ComboBoxItem>
+
+        </ComboBox>
+        <PasswordBox  Foreground="White" x:Name ="txtConfirmSenha" Controls:TextBoxHelper.Watermark="Confirmar senha:" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="True"  Margin="52,212,0,0" VerticalAlignment="Top" Background="#FF4EB020" Height="26" Width="231"/>
+
+    </Grid>
+</Controls:MetroWindow>

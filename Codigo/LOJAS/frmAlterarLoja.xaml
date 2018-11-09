@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Tcc.LOJAS.frmAlterarLoja"
+        Title="Alterar" Height="443.692" Width="523.431" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0" Height="411" VerticalAlignment="Top">
+
+        <TextBox  Foreground="White" x:Name="txtnomeFant" Custom:TextBoxHelper.Watermark="Nome fantasia:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,75,21,301" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtNome" Custom:TextBoxHelper.Watermark="Nome:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,125,21,251" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtCNPJ" Custom:TextBoxHelper.Watermark="CNPJ:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,178,21,198" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtLocalizacao" Custom:TextBoxHelper.Watermark="Localização:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,229,21,147" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtCodigo" Custom:TextBoxHelper.Watermark="ID do setor:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,285,21,91" Background="DeepSkyBlue"/>
+        <Custom:Tile Content="Salvar" Foreground="White" x:Name="tlSalvar"  Margin="22,353,21,20" Height="Auto" Width="Auto" Click="tlSalvar_Click" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" x:Name="txtID" Custom:TextBoxHelper.Watermark="ID:" Custom:TextBoxHelper.ClearTextButton="True" Margin="22,25,307,351" Background="DeepSkyBlue"/>
+
+    </Grid>
+</Controls:MetroWindow>

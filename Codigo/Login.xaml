@@ -1,0 +1,21 @@
+﻿<Controls:MetroWindow x:Name="load" x:Class="Tcc.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                       WindowStartupLocation="CenterScreen"
+
+        Title="Login" Height="375" Width="415" WindowStyle="None" Loaded="MetroWindow_Loaded" >
+    <Grid Background="White" RenderTransformOrigin="0.491,0.517" Margin="0,0,-8,-8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="309*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Controls:Tile Margin="71,21,78,10" Height="Auto" Width="Auto" Content="Entrar" Background="#FF555899" Click="Tile_Click" Grid.Row="1"/>
+        <TextBox  Foreground="White" Name="txtNome" Controls:TextBoxHelper.Watermark="Login" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="True" Height="26" Margin="71,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Background="#FF555899" />
+
+        <PasswordBox  Foreground="White" Name ="txtSenha" Controls:TextBoxHelper.Watermark="Senha" HorizontalAlignment="Left" Controls:TextBoxHelper.ClearTextButton="True"  Margin="71,204,0,0" VerticalAlignment="Top" Background="#FF555899" Height="26" Width="266" SelectionBrush="#FF555899" GotKeyboardFocus="txtSenha_GotKeyboardFocus"/>
+        <Image Source="image/user.png" HorizontalAlignment="Left" Height="124" Margin="142,27,0,0" VerticalAlignment="Top" Width="130"/>
+
+    </Grid>
+</Controls:MetroWindow>

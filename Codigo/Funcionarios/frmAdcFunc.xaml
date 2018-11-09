@@ -1,0 +1,39 @@
+﻿<Controls:MetroWindow x:Class="Tcc.Funcionarios.frmAdcFunc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        WindowStyle="ToolWindow"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      
+        Title="Funcionarios" Height="551" Width="527" Background="White" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,-1">
+        <TextBox Foreground="White" Name="txtNomeAddUser" Controls:TextBoxHelper.Watermark="Nome:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,74,19,418" Background="DeepSkyBlue"/>
+        <TextBox Foreground="White" Name="txtRG" Controls:TextBoxHelper.Watermark="RG:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,169,271,329" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtCidade" Controls:TextBoxHelper.Watermark="Cidade:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,211,271,288" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtEndereco" Controls:TextBoxHelper.Watermark="Endereço:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,298,19,194" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtEmail" Controls:TextBoxHelper.Watermark="Email:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,252,19,240" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtComplemento" Controls:TextBoxHelper.Watermark="Complemento:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,340,19,152" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtTelefone" Controls:TextBoxHelper.Watermark="Telefone:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,382,329,110" Background="DeepSkyBlue"/>
+        <TextBox  Foreground="White" Name="txtCelular" Controls:TextBoxHelper.Watermark="Celular:" Controls:TextBoxHelper.ClearTextButton="True" Margin="311,382,19,110" Background="DeepSkyBlue" RenderTransformOrigin="0.848,0"/>
+        <TextBox  Foreground="White" Name="txtCPF" Controls:TextBoxHelper.Watermark="CPF:" Controls:TextBoxHelper.ClearTextButton="True" Margin="10,127,271,371" Background="DeepSkyBlue"/>
+        <ComboBox Foreground="White" Name="cboSexo"  Controls:TextBoxHelper.Watermark="Sexo" HorizontalAlignment="Left" Margin="260,127,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Masculino</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Feminino</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Outro...</ComboBoxItem>
+        </ComboBox>
+        <ComboBox  Foreground="White" x:Name="cboCargo" Controls:TextBoxHelper.Watermark="Cargo" HorizontalAlignment="Left" Margin="260,169,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Presidente</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Diretor</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Gerente</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Recepção</ComboBoxItem>
+
+        </ComboBox>
+        <ComboBox  Foreground="White" x:Name="cboTurno" Controls:TextBoxHelper.Watermark="Turno" HorizontalAlignment="Left" Margin="260,210,0,0" VerticalAlignment="Top" Width="238" Background="DeepSkyBlue" Height="31">
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Manhã</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Tarde</ComboBoxItem>
+            <ComboBoxItem Foreground="White" Background="DeepSkyBlue">Noite</ComboBoxItem>
+        </ComboBox>
+        <Controls:Tile Name="tlSalvar" Content="Salvar" Margin="175,433,206,10" Height="Auto" Width="Auto" Background="DeepSkyBlue" Click="tlSalvar_Click" FontSize="24" >
+
+        </Controls:Tile>
+    </Grid>
+</Controls:MetroWindow>

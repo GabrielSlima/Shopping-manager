@@ -1,0 +1,17 @@
+﻿<Controls:MetroWindow x:Class="Tcc.VEICULOS.frmAddVeiculo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="Incluir veiculo" Height="684.163" Width="611.174" Background="#FFFFFFFF" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFFFFFFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="110*"/>
+        </Grid.RowDefinitions>
+        <TextBox Foreground="White" Name="txtPlaca" Margin="63,141,58,143" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Placa do carro:" FontSize="18"/>
+        <TextBox Foreground="White" Name="txtModelo" Margin="63,198,58,86" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Modelo do carro" FontSize="18"/>
+        <TextBox Foreground="White" Name="txtMarca" Margin="63,255,58,29" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Marca do carro:" FontSize="18" />
+        <TextBox Foreground="White" Name="txtCodFunc"  Margin="63,312,58,302" Background="DeepSkyBlue" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Seu codigo:" FontSize="18" Grid.RowSpan="2" />
+        <Controls:Tile Name="tlSalvar" Margin="63,180,76,68" Content="Salvar" Width="Auto" FontSize="22" Click="tlSalvar_Click" Grid.Row="1" Background="DeepSkyBlue" Height="Auto"/>
+    </Grid>
+</Controls:MetroWindow>
